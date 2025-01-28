@@ -46,7 +46,7 @@ const Header = () => {
         <div className="mobile-menu-icon">
           <MenuOutlined onClick={handleDrawerToggle} />
         </div>
-        <img src={logotTypeImg} alt="Logo" className="header-logo" />
+        <img src={logotTypeImg}  alt="Logo" className="header-logo" />
         {isSearchActive ? (
           <input
             type="text"
@@ -78,7 +78,7 @@ const Header = () => {
           justifyContent: "space-between",
         }}
         closable={true}
-        closeIcon={<div style={{ marginLeft: "380px" }}> X</div>}
+        closeIcon={<div style={{ marginRight: "20px" }}> X</div>}
         title={
           <div
             style={{

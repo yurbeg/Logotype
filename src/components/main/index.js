@@ -37,6 +37,7 @@ const Main = () => {
         <Card
           key={index}
           imagePath={dataObj.img}
+          imagePath2x={dataObj.img_2x}
           tags={dataObj.tags}
           title={dataObj.title}
           autor={dataObj.autor}
@@ -50,8 +51,9 @@ const Main = () => {
         title={selectedPost?.title}
         open={isModalOpen}
         onCancel={hanleCloseModal}
+        footer={null}
       >
-        <img src={selectedPost?.img} alt="Post"></img>
+        <img src={selectedPost?.img} alt="Post" style={{width:"100%"}}></img>
         <p className="tags">{selectedPost?.tags}</p>
         <p className="autor">
           {" "}
